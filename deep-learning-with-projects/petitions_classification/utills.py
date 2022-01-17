@@ -112,7 +112,6 @@ def _embedding(df_drop, emb_path):
     print(model_result)
 
 
-
 def _train_val_data(df_drop, train_path, val_path):
     rng = RandomState() # 난수 생성.
 
@@ -123,7 +122,6 @@ def _train_val_data(df_drop, train_path, val_path):
 
     tr.to_csv(train_path, index=False, encoding='utf-8-sig')
     val.to_csv(val_path, index=False, encoding='utf-8-sig')
-
 
 
 def make_data(crawling, crawling_path, token_path, train_path, val_path, emb_path):
